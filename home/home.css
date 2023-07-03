@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #ff0157;
+  --secondary-color: #fff;
+  --tertiary-color: #f2f2f2;
+  --quaternary-color: #a50339;
+  --quinary-color: #af695c;
+  --senary-color: #2a2a2a;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--senary-color);
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  min-height: 1000px;
+}
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  padding: 30px;
+}
+
+nav {
+  background-color: var(--tertiary-color);
+  width: 100%;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+nav .logo {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+}
+
+nav .title {
+  font-weight: 700;
+  font-size: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav .navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav .navigation li {
+  margin-left: 80px;
+}
+
+nav .navigation li a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+nav .navigation li a:hover {
+  color: var(--quaternary-color);
+  font-weight: 500;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../imagens/depression.avif);
+  background-size: cover;
+}
+#banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+#banner .content h2 {
+  margin-top: -80px;
+  font-size: 5em;
+  color: var(--secondary-color);
+}
+#banner p {
+  font-weight: 300;
+  color: var(--secondary-color);
+  font-size: 1em;
+}
+.btn {
+  font-size: 1em;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+.resultados-jogos {
+  margin-top: 20px;
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.resultados-jogos h2 {
+  text-align: center;
+}
+
+.jogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.jogo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.placar {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.jogo:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: var(--senary-color);
+  margin-left: 10px;
+}
+
+main {
+  padding: 100px;
+}
+
+.grid-banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-banner .grid-content {
+  position: relative;
+  width: 100%;
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+article {
+  background-color: var(--tertiary-color);
+  padding: 20px;
+}
+
+article a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.video {
+  background-color: var(--tertiary-color);
+  padding: 20px;
+}
+
+ol {
+  padding-left: 20px;
+}
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--quinary-color);
+  font-weight: 300;
+}
+
+.icon-chevron-left {
+  display: inline-block;
+  width: 8px;
+  height: 3px;
+  border-top: 2px solid #ff0157;
+  border-left: 2px solid #ff0157;
+  transform: rotate(-45deg);
+  margin-right: 5px;
+  margin-left: 18px;
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#social-media {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-media a {
+  margin-right: 10px;
+}
+
+#social-media img {
+  width: 30px;
+  height: 30px;
+}
